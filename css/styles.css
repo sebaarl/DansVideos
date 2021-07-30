@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-nav {
+    font-weight: 500;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .navbar-link {
+    color: white;
+    padding-top: .8rem;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after {
+    width: 100%;
+    background: #017a6b;
+}
+
+.carousel-item {
+    height: calc(100vh - 100px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url("../images/baile.jpeg");
+}
+
+.img-2 {
+    background-image: url("../images/baileee.jpeg");
+}
+
+.img-3 {
+    background-image: url("../images/bailee.jpeg");
+}
+
+main {
+    width: 100%;
+    height:auto;
+}
+
+.col-portafolio {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #017a6b;
+    color: white;
+    transition: all .7s ease-out;
+}
+
+.project-link:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+.project-link:hover:after {
+    width: 100%;
+    background: #017a6b;
+}
+
+footer {
+    overflow: hidden;
+}
+
+.footer-body ul li {
+    font-weight: 500;
+}
+
+.footer-body i {
+    font-size: 30px;
+    padding: 10px;
+    color: #1f1f1f;
+    transition: all .7s ease-out;
+}
+
+.footer-body .facebook:hover {
+    color: #4267b2;
+}
+
+.footer-body .twitter:hover {
+    color: #1DA1F2;
+}
+
+.footer-body .instagram:hover {
+    color: #E1306C;
+}
+
+.footer-body .tiktok:hover {
+    color: #ec51a3;
+}
