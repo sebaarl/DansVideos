@@ -112,6 +112,27 @@ main {
     background: #017a6b;
 }
 
+.team i {
+    font-size: 26px;
+    color: #1f1f1f;
+}
+
+.team .card {
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.team .card:hover{
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.team .card img {
+    width: 100%;
+    transition: .4s;
+}
+
 footer {
     overflow: hidden;
 }
@@ -120,25 +141,41 @@ footer {
     font-weight: 500;
 }
 
-.footer-body i {
+.bx {
     font-size: 30px;
     padding: 10px;
     color: #1f1f1f;
     transition: all .7s ease-out;
 }
 
-.footer-body .facebook:hover {
+.facebook:hover {
     color: #4267b2;
 }
 
-.footer-body .twitter:hover {
+.twitter:hover {
     color: #1DA1F2;
 }
 
-.footer-body .instagram:hover {
+.instagram:hover {
     color: #E1306C;
 }
 
-.footer-body .tiktok:hover {
+.tiktok:hover {
     color: #ec51a3;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link:after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0px;
+        transition: all .8s;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover:after {
+        width: 100px;
+        background: #017a6b;
+    }
 }
