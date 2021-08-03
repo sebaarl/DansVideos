@@ -12,6 +12,14 @@ ul {
     list-style: none;
 }
 
+iframe {
+    max-width: 400px;
+}
+
+.link-project {
+    margin: 0 auto !important;
+}
+
 .navbar {
     text-transform: uppercase;
     font-size: .9rem;
@@ -188,5 +196,9 @@ footer {
 
     .about-logo {
         margin-top: 40px;
+    }
+
+    .container-title {
+        width: 80% !important
     }
 }
