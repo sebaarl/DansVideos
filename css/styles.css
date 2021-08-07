@@ -131,6 +131,10 @@ main {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
 }
 
+.works-item {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .3);
+}
+
 .team .card img {
     width: 100%;
     transition: .4s;
@@ -167,31 +171,6 @@ footer {
     color: #ec51a3;
 }
 
-.project-slider {
-    height: auto;
-    width: 90%;
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    margin: 0 auto;
-}
-
-.project-content {
-    position: relative;
-    scroll-snap-align: center;
-    padding: 0 15px;
-}
-
-.project-slider::-webkit-scrollbar {
-    height: 4px;
-}
-
-.project-slider::-webkit-scrollbar-thumb {
-    background-color: #1f1f1f;
-    border-radius: 50px;
-}
-
 .card {
     width: 100%;
     border-radius: 50%;
@@ -205,6 +184,49 @@ footer {
     width: 100%;
     height: 500px;
     object-fit: cover;
+}
+
+.item {
+    transition: .5s ease-in-out;   
+}
+
+.item:hover {
+    filter: brightness(80%);
+}
+
+.galeria img {
+    box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+    border-radius: 15px;
+}
+
+.materialbox-caption {
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.galeria .col {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .materialbox-caption {
+         width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .materialbox-caption {
+         width: 70%;
+    }
 }
 
 @media screen and (max-width: 991px) {
