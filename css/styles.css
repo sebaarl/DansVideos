@@ -133,7 +133,6 @@ main {
 }
 
 .team .card img {
-    border-radius: 5px;
     width: 100%;
     transition: .4s;
 }
@@ -198,6 +197,12 @@ footer {
 
 .galeria .col {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .works-item {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 991px) {
